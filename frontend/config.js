@@ -1,0 +1,1 @@
+window.API_URL = 'https://backend2-lkdk.vercel.app';
