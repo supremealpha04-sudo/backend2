@@ -65,6 +65,16 @@ async def startup_event():
     except Exception as e:
         logger.warning(f"Database init warning: {e}")
 
+@app.get("/")
+async def root():
+    """Root endpoint"""
+    return {
+        "message": "FELDOR_HEALTH Backend API",
+        "status": "running",
+        "version": settings.APP_VERSION,
+        "docs": "/api/docs",
+        "health": "/api/health"
+    }
 @app.get("/api/health")
 async def health_check():
     """Health check endpoint"""
