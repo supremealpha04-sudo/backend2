@@ -1,1 +1,1 @@
-window.API_URL = 'https://backend2-lkdk.vercel.app';
+window.API_URL = 'https://backend2-1hgm.onrender.com';
